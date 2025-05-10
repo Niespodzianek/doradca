@@ -45,40 +45,48 @@ def analizator_kursu(dane):
 	print(f"{notowanie:.2f}, {srednia_K:.2f}, {srednia_D:.2f}")
 	if srednia_K > srednia_D:
 		if notowanie > srednia_K:
-			print("Silny trend rosnacy")
+			komentarz = "Silny trend rosnacy"
 		elif srednia_D > notowanie:
-			print("Trend rosnacy, gleboka korekta, mozliwosc otwarcia dlugiej pozycji")
+			komentarz = "Trend rosnacy, gleboka korekta, mozliwosc otwarcia dlugiej pozycji"
 		elif srednia_K > notowanie:
-			print("Trend rosnacy w korekcie")
+			komentarz = "Trend rosnacy w korekcie"
 		else:
-			print("Kurs na sredniej")
+			komentarz = "Kurs na sredniej"
 		if notowanie > boll_G:
-			print("Trend rosnacy, mocno przegrzany, mozliwosc korekty")
+			komentarz = "Trend rosnacy, mocno przegrzany, mozliwosc korekty"
 		elif boll_D > notowanie:
-			print("Trend rosnacy, gleboka kortekta, okazja otwarcia dlugiej pozycji")
+			komentarz = "Trend rosnacy, gleboka kortekta, okazja otwarcia dlugiej pozycji"
 	elif srednia_D > srednia_K:
 		if srednia_K > notowanie:
-			print("Silny trend spadkowy")
+			komentarz = "Silny trend spadkowy"
 		elif notowanie > srednia_D:
-			print("Trend spadkowy, gleboka korekta, mozliwosc otwarcia krotkiej pozycji")
+			komentarz = "Trend spadkowy, gleboka korekta, mozliwosc otwarcia krotkiej pozycji"
 		elif notowanie > srednia_K:
-			print("Trend spadkowy w korekcie")
+			komentarz = "Trend spadkowy w korekcie"
 		if boll_D > notowanie:
-			print("Silny trend spadkowy, mozno przegrzany, mozliwosc korekty")
+			komentarz = "Silny trend spadkowy, mozno przegrzany, mozliwosc korekty"
 		elif notowanie > boll_G:
-			print("Trend spadkowy, gleboka korekta, okazja otwarcia krotkiej pozycji")
+			komentarz = "Trend spadkowy, gleboka korekta, okazja otwarcia krotkiej pozycji"
 	else:
-		print("Skrzyzowanie srednich")
+		komentarz = "Skrzyzowanie srednich"
+	return komentarz
+
+def generator_wyniku(nazwa, dane):
+    wynik = f"{nazwa} \t- {dane}"
+    return wynik
 
 if __name__ == "__main__":
 	print("PROGRAM PRACUJE")
 	# pozyskanie danych
 
-	dane = pandas.DataFrame(generator_sesji_gieldowej(), columns = ["kurs"])
+	dane_analizowanej_spolki = pandas.DataFrame(generator_sesji_gieldowej(), columns = ["kurs"])
+	nazwa_analizowanej_spolki = "Apple"
 	
 	# dopisanie parametrow
-	dane = dopisywanie_danych(dane)
+	dane_gotowe = dopisywanie_danych(dane_analizowanej_spolki)
 
 	# analizator kursu
-	analizator_kursu(dane)
+	wynik_analizy = analizator_kursu(dane_gotowe)
+	wynik_zbiorczy = generator_wyniku(nazwa_analizowanej_spolki, wynik_analizy)
+	print(wynik_zbiorczy)
 
