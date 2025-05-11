@@ -28,5 +28,7 @@
 
 ### TO DO
 <p> <ul>1. Możliwość używania polskich liter w vi na Raspberry Pi 5 albo przejście na język angielski albo zainstalowanie PyCharma.<br>
-	2. Generowanie wyniku w postaci:<br><ul>1. Pliku txt,<br>2. Pliku html.</ul></ul>
+	2. Generowanie wyniku w postaci:<br><ul>1. Pliku txt,<br>2. Pliku html.<br>
+	3.  Zapisywanie danych do plików: analizowanych spółek, listy analizowanych spółek.
+	</ul></ul>
 </p>

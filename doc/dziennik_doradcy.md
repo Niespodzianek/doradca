@@ -15,14 +15,11 @@
 <b>Cele bliskie:</b> <i>skończyć program w wersji 1.1.</i><br>
 <b>Cele dalekie:</b> <i>rozpocząc pracę nad wersją 2.</i><br>
 <b>Przemyślenia:</b> <i>Program działa bez problemu, ale tylko na komputerze. Na iPadzie, w Pythoniscie, nie działa moduł <i>yfinance</i>, na Juna’ie nie działa program wogóle, jest wiele błędów.<br> Symulacja tranzakcji jest fajnym pomysłem - pomysł na wersję 3 - trzeba to dokładnie przemyśleć. Wygląda na to, że kolejne funkcje programu to będą kolejne punkty menu programu. Na dzisiaj koniec.</i></p>
-
-
 <h3>11 V 2025</h3>
-<p>
-<b>Opis:</b> <i></i><br>
-<b>Cele bliskie:</b> <i></i><br>
-<b>Cele dalekie:</b> <i></i><br>
-<b>Przemyślenia:</b> <i></i>
+<p><b>Opis:</b> <i>Skończona wersja 1.1. Program działa perfekcyjnie.</i><br>
+<b>Cele bliskie:</b> <i>wpisać spółki z WIG40 do listy analizowanych spółek.</i><br>
+<b>Cele dalekie:</b> <i>skończyć wersję 2.0.</i><br>
+<b>Przemyślenia:</b> <i>Bez szans na polskie litery w vi na Raspberry Pi 5. Trzeba stworzyć listę analizowanych spółek. Czas na napisanie menu i zapisywanie danych do plików. Jestem zadowolony.</i>
 </p>
 
 <h3>12 V 2025</h3>
