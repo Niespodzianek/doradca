@@ -9,12 +9,12 @@
 <p><b>Opis:</b> <i>Rozpocząłem pracę nad programem pisząc kod na Raspberry Pi 5. Niestety, aktualnie piszę kod w vi, co powoduje, że nie mogę korzystać z polskich liter - przynajmniej na Raspberry, bo pamiętam, że na Macintoshu można było utrzywać polskich liter. I to jest pierwszy problem do rozwiązania. Jeżeli mam dalej pisać w vi, to muszę spróbować kolorować składnię i przejść na język polski, ale jeżeli się to nie uda, wtedy komentarz musi być po angielsku.</i><br>
 <b>Cele bliskie:</b> <i>skończyć program w wersji 1.</i><br>
 <b>Cele dalekie:</b> <i>rozpocząć pracę nad wersją 2.</i><br>
-<b>Przemyślenia:</b> <i>wykorzystać SI nie tylo do analizowania danych, ale również do ułatwienia obsługi programu.<br> Obecnie nie mam żadnego radykalnego pomysłu ani fajerwerku na działanie programu. Ma pozyskiwać dane i wyświetlać wynik analizy, w dalszych wersjach chciałbym aby na bierząco analizował dane. Jeżeli się pojawią jakieś pomysły, będę je tu dopisywał. Na obecną chwilę mam pomysł na wersję 1. i 2.</i></p>
+<b>Przemyślenia:</b> <i>wykorzystać SI nie tylko do analizowania danych, ale również do ułatwienia obsługi programu.<br> Obecnie nie mam żadnego radykalnego pomysłu ani fajerwerku na działanie programu. Ma pozyskiwać dane i wyświetlać wynik analizy, w dalszych wersjach chciałbym aby na bierząco analizował dane. Jeżeli się pojawią jakieś pomysły, będę je tu dopisywał. Na obecną chwilę mam pomysł na wersję 1. i 2.</i></p>
 <h3>10 V 2025</h3>
 <p><b>Opis:</b> <i>Skończona wersja 1. programu.  Nieznacznie zmieniłem działanie programu, teraz wynik w postaci komentarza jest generowany jako wynik - return funkcji a nie jako efekt jego działania.</i><br>
 <b>Cele bliskie:</b> <i>skończyć program w wersji 1.1.</i><br>
 <b>Cele dalekie:</b> <i>rozpocząc pracę nad wersją 2.</i><br>
-<b>Przemyślenia:</b> <i>Program działa bez problemu, ale tylko na komputerze. Na iPadzie, w Pythoniscie, nie działa moduł <i>yfinance</i>, na zo w Juna’ie nie działa program, jest wiele błędów.<br> Symulacja tranzakcji jest fajnym pomysłem - pomysł na wersję 3 - trzeba to dokładnie przemyśleć. Wygląda na to, że kolejne funkcje programu to będą kolejne punkty menu programu. Na dzisiaj koniec.</i></p>
+<b>Przemyślenia:</b> <i>Program działa bez problemu, ale tylko na komputerze. Na iPadzie, w Pythoniscie, nie działa moduł <i>yfinance</i>, na Juna’ie nie działa program wogóle, jest wiele błędów.<br> Symulacja tranzakcji jest fajnym pomysłem - pomysł na wersję 3 - trzeba to dokładnie przemyśleć. Wygląda na to, że kolejne funkcje programu to będą kolejne punkty menu programu. Na dzisiaj koniec.</i></p>
 
 
 <h3>11 V 2025</h3>
