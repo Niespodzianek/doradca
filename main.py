@@ -1,15 +1,6 @@
 import pandas
 import random
-
-# zmienne
-otwarcie = None
-zamkniecie = None
-maxi = None
-mini = None
-obrot = None
-
-# testery
-test_1 = None
+import yfinance
 
 def generator_sesji_gieldowej():
 	notowania = []
@@ -26,7 +17,7 @@ def generator_sesji_gieldowej():
 		notowania.append(notowanie)
 	return notowania
 
-def dopisywanie_danych(dane):
+def testowe_dopisywanie_danych(dane):
 	dane["srednia_K"] = dane.kurs.rolling(window = 21, min_periods = 21).mean()
 	dane["srednia_D"] = dane.kurs.rolling(window = 55, min_periods = 55).mean()
 	odchylenie = dane.kurs.rolling(window = 21, min_periods = 21).std()
@@ -34,7 +25,7 @@ def dopisywanie_danych(dane):
 	dane["boll_G"] = dane["kurs"] + odchylenie
 	return dane
 
-def analizator_kursu(dane):
+def testowy_analizator(dane):
 	print(dane)
 	pozycja = len(dane.kurs) - 1
 	notowanie = dane.loc[pozycja, "kurs"]
@@ -64,7 +55,7 @@ def analizator_kursu(dane):
 		elif notowanie > srednia_K:
 			komentarz = "Trend spadkowy w korekcie"
 		if boll_D > notowanie:
-			komentarz = "Silny trend spadkowy, mozno przegrzany, mozliwosc korekty"
+			komentarz = "Silny trend spadkowy, mocno przegrzany, mozliwosc korekty"
 		elif notowanie > boll_G:
 			komentarz = "Trend spadkowy, gleboka korekta, okazja otwarcia krotkiej pozycji"
 	else:
@@ -78,15 +69,18 @@ def generator_wyniku(nazwa, dane):
 if __name__ == "__main__":
 	print("PROGRAM PRACUJE")
 	# pozyskanie danych
-
-	dane_analizowanej_spolki = pandas.DataFrame(generator_sesji_gieldowej(), columns = ["kurs"])
-	nazwa_analizowanej_spolki = "Apple"
 	
+	dane_analizowanej_spolki = pandas.DataFrame(generator_sesji_gieldowej(), columns = ["kurs"])
+	nazwa_analizowanej_spolki = "MSFT"
+	
+	#zyskanie danych przy pomocy modulu yfinance
+	# analizowane_spolki = ["AAPL", "MSFT"]
+
 	# dopisanie parametrow
-	dane_gotowe = dopisywanie_danych(dane_analizowanej_spolki)
+	dane_gotowe = testowe_dopisywanie_danych(dane_analizowanej_spolki)
 
 	# analizator kursu
-	wynik_analizy = analizator_kursu(dane_gotowe)
+	wynik_analizy = testowy_analizator(dane_gotowe)
 	wynik_zbiorczy = generator_wyniku(nazwa_analizowanej_spolki, wynik_analizy)
 	print(wynik_zbiorczy)
 
