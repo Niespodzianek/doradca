@@ -61,8 +61,8 @@ if __name__ == "__main__":
 	wynik_dzialania_programu = []
 	
 	# tikery analizowanych spolek
-	lista_spolek = ["AAPL", "MSFT", "PLTR", "TSLA", "GOOG", "AMZN", "META", "NVDA", "AMD", "INTC", "SMCI", "QCOM", "ARM", "HPQ", "TSM", "MU", "AVGO", "ASX", "ASML", "FNV", "WPM", "GFI", "AU", "AEM", "KGC", "GDX", "NEM", "GM", "QS", "BA", "LMT", "BAC", "DB", "V", "MA", "ALR.WA", "CDR.WA", "MBK.WA", "PKN.WA", "XTB.WA", "ALE.WA", "BDX.WA", "CCC.WA", "DNP.WA", "KGH.WA", "KRU.WA", "KTY.WA", "LPP.WA", "OPL.WA", "PCO.WA", "PKO.WA", "PZU.WA", "SPL.WA", "ZAB.WA", "11B.WA", "ATT.WA", "CPS.WA", "JSW.WA", "PEO.WA", "PGE.WA", "RBW.WA", "SNT.WA", "SPL.WA", "TPE.WA", "TXT.WA", "BFT.WA", "BHW.WA"]
-	# pozyskanie danych
+	lista_spolek = ["AAPL", "MSFT", "PLTR", "TSLA", "GOOG", "AMZN", "META", "NVDA", "AMD", "INTC", "SMCI", "QCOM", "ARM", "HPQ", "TSM", "MU", "AVGO", "ASX", "ASML", "FNV", "WPM", "GFI", "AU", "AEM", "KGC", "GDX", "NEM", "GM", "QS", "BA", "LMT", "BAC", "DB", "V", "MA", "ALR.WA", "CBF.WA", "CDR.WA", "MBK.WA", "PKN.WA", "XTB.WA", "ALE.WA", "BDX.WA", "CCC.WA", "DNP.WA", "KGH.WA", "KRU.WA", "KTY.WA", "LPP.WA", "OPL.WA", "PCO.WA", "PKO.WA", "PZU.WA", "SPL.WA", "ZAB.WA", "11B.WA", "ATT.WA", "CPS.WA", "JSW.WA", "PEO.WA", "PGE.WA", "RBW.WA", "SNT.WA", "TPE.WA", "TXT.WA", "BFT.WA", "BHW.WA"]
+	 # pozyskanie danych
 	for spolka in lista_spolek:
 		notowania_surowe = pozyskanie_danych(spolka)
 		# print(f"DEBUG: notowania pozyskane z internetu dla spolki {spolka}: {notowania_surowe}")
