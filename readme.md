@@ -4,7 +4,7 @@
 <i> Program ma na celu ułatwić podejmowanie decyzji inwestycyjnych na podstawie analizy wzajemnych zależności pomiędzy kursem akcji, jego średnimi i odchyleniem statystycznym a wolumenem handlu.</i><br>
 <i> Efektem pracy programu będzie wygenerowanie komentarza.</i><br>
 
-### Cele kolejnych itaracji programu:
+### Cele kolejnych iteracji programu:
 <p>Wersja 1.0:<br>
 	Pozyskanie danych jednej spółki, za pomocą modułu <i>yfinance</i>.<br>
 	Analiza danych z wykorzystaniem modułu <i>pandas</i>.<br>
