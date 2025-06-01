@@ -10,3 +10,4 @@ Brudnopis testera strategii inwestycyjnych.
 	NIE: sprawdzenie czy poprzedni kura by mniejszy od poprzedniej sredniej
 		TAK: 
 		NIE: 
+zmiana
