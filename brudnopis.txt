@@ -11,3 +11,4 @@ Brudnopis testera strategii inwestycyjnych.
 		TAK: 
 		NIE: 
 zmiana
+nowa zmiana

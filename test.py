@@ -1,0 +1,2 @@
+# moduł z listami spółek
+#
