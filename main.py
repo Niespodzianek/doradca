@@ -4,7 +4,7 @@ import yfinance
 
 def dopisywanie_danych(dane):
 	dane["srednia_K"] = dane.Close.rolling(window = 21, min_periods = 21).mean()
-	dane["srednia_D"] = dane.Close.rolling(window = 55, min_periods = 55).mean()
+	dane["srednia_D"] = dane.Close.rolling(window = 89, min_periods = 55).mean()
 	odchylenie = dane.Close.rolling(window = 21, min_periods = 21).std()
 	dane["boll_D"] = dane["Close"] - odchylenie
 	dane["boll_G"] = dane["Close"] + odchylenie
