@@ -14,7 +14,7 @@
 <p><b>Opis:</b> <i>Skończona wersja 1. programu.  Nieznacznie zmieniłem działanie programu, teraz wynik w postaci komentarza jest generowany jako wynik - return funkcji a nie jako efekt jego działania.</i><br>
 <b>Cele bliskie:</b> <i>skończyć program w wersji 1.1.</i><br>
 <b>Cele dalekie:</b> <i>rozpocząc pracę nad wersją 2.</i><br>
-<b>Przemyślenia:</b> <i>Program działa bez problemu, ale tylko na komputerze. Na iPadzie, w Pythoniscie, nie działa moduł <i>yfinance</i>, na Juna’ie nie działa program wogóle, jest wiele błędów.<br> Symulacja tranzakcji jest fajnym pomysłem - pomysł na wersję 3 - trzeba to dokładnie przemyśleć. Wygląda na to, że kolejne funkcje programu to będą kolejne punkty menu programu. Na dzisiaj koniec.</i></p>
+<b>Przemyślenia:</b> <i>Program działa bez problemu, ale tylko na komputerze. Na iPadzie, w Pythoniscie, nie działa moduł <i>yfinance</i>, na Juna’ie nie działa program wogóle, jest wiele błędów.<br> Symulacja transakcji jest fajnym pomysłem - pomysł na wersję 3 - trzeba to dokładnie przemyśleć. Wygląda na to, że kolejne funkcje programu to będą kolejne punkty menu programu. Na dzisiaj koniec.</i></p>
 <h3>11 V 2025</h3>
 <p><b>Opis:</b> <i>Skończona wersja 1.1. Program działa perfekcyjnie.</i><br>
 <b>Cele bliskie:</b> <i>wpisać spółki z WIG40 do listy analizowanych spółek.</i><br>
@@ -22,7 +22,15 @@
 <b>Przemyślenia:</b> <i>Bez szans na polskie litery w vi na Raspberry Pi 5. Trzeba stworzyć listę analizowanych spółek. Czas na napisanie menu i zapisywanie danych do plików. Jestem zadowolony.</i>
 </p>
 
-<h3>12 V 2025</h3>
+<h3>10 VII 2025</h3>
+<p>
+<b>Opis:</b> <i>Rozwój wersji 1.2. i 1.3. Program działa perfekcyjnie, tak dobrze, że aż mnie zaskakuje. Stąd ambitny rozwój wersji 1.2. Problem polskich liter został rozwiązany. Wprowadziłem liczne listy - co znacznie przyspieszyło  działanie programu, menu, portfel, gotówkę. A od samej strony programistycznej: dodatkowe pliki i moduły, np. z funkcjami pomocniczymi - statycznymi, które w zamyśle mają wspomóc pracę programu. To wszystko wymaga zapisu danych na dysk danych. Nowe pliki, moduły, importy. Można już definiować własne długpści średnich, względem których analizowane są spółki. Jest OK aż dziwne.</i><br>
+<b>Cele bliskie:</b> <i>Zapis na dysk: gotówki, jeszcze więcej spółek.</i><br>
+<b>Cele dalekie:</b> <i>Zapis na dysk: portfela i posiadanych - narazie tylko - akcji.</i><br>
+<b>Przemyślenia:</b> <i>Wszystko idzie w dobrą stronę. Muszę zwiększyć ilość analizowanych spółek.</i>
+</p>
+
+<h3>10 VII 2025</h3>
 <p>
 <b>Opis:</b> <i></i><br>
 <b>Cele bliskie:</b> <i></i><br>

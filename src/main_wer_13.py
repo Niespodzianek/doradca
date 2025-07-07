@@ -70,7 +70,7 @@ def generator_wyniku(nazwa, dane):
     return wynik
 
 def program(lista, info):
-	# możliwość automatycznego wyboru perspektywy długości trendu
+	# 
 	# definiowanie własnych zakresów średnich
 	zakres_krotkiej_sredniej = int(input("Podaj zakres krótkiej średniej: "))
 	zakres_dlugiej_sredniej = int(input("Podaj zakres długiej średniej: "))
